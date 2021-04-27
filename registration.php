@@ -5,7 +5,7 @@ session_start();
     include 'connection.php';
     include 'function.php';
 
-    if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if($_isset($_POST['submit'])){
 
         //something was posted
         $fullname = $_POST['fullname'];
@@ -44,7 +44,7 @@ session_start();
                 <input type="text" name="fullname" placeholder="enter full name"><br><br>
                 <input type="email" name="email" placeholder="enter your email"><br><br>
                 <input type="password" name="password" placeholder="enter your password"><br><br>
-                <button><a href="login.php" style="text-decoration: none;">Submit</a></button><br><br>
+                <button type="submit" name="submit">Submit</button><br><br>
                 <span>Already a member? <?php echo " "; ?></span><a href="login.php">Click to login</a>
                 
 
