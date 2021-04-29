@@ -56,7 +56,7 @@ session_start();
 
                 <input type="email" name="email" placeholder="enter your email"><br><br>
                 <input type="password" name="password" placeholder="enter your password"><br><br>
-                <a href="#"><em>forgot password?</em></a><br>
+                <a href="reset-password.php"><em>forgot password?</em></a><br>
                 <input type="submit" name="Login"><br><br>
                 
                 <span>New member? <?php echo " "; ?></span><a href="registration.php">Register</a>
